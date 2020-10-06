@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 /**
- *
- * @author 
+ * Prints a line of asterisks to the screen based on the number the user enters then repeats that line based on the number the user enters
+ * @author Cole Girling
  */
 public class Main {
 
@@ -9,7 +11,29 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    //scanner for user input
+    Scanner input = new Scanner(System.in);
+
+    //asks the user for a number between 1 and 10
+    System.out.println("Please enter a number between 1 and 10");
+    int userNumber = input.nextInt();
+
+    //loop runs until i equals the user number
+    for(int i = 1; i <= userNumber; i++){
+      //runs until j equals the user number
+      if(i == 1 || i == userNumber){
+       for(int j = 1; j <= userNumber; j++){
+        //prints an asterisk to the screen
+        System.out.print("*");
+       }
+      }
+        
+        
+        //loop action prints a blank space to space the asteriks out
+        System.out.println();
+        
+        
+    }
     
   }
 }
