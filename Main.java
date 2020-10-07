@@ -20,16 +20,29 @@ public class Main {
 
     //loop runs until i equals the user number
     for(int i = 1; i <= userNumber; i++){
+      
       //runs until j equals the user number
-      if(i == 1 || i == userNumber){
+      
        for(int j = 1; j <= userNumber; j++){
         //prints an asterisk to the screen
+        if(i == 1 || i == userNumber){
         System.out.print("*");
+        }
+        if(i >= 2 && i <= userNumber){
+          if(j == 1 || j == userNumber){
+          System.out.print("*");
+         }
+        }
+        if(j >= 2 && j < userNumber && i >= 2 && i < userNumber){
+          System.out.print(" ");
+          
+        }
        }
-      }
+      
+      
         
         
-        //loop action prints a blank space to space the asteriks out
+        // prints a blank space to space the asteriks out
         System.out.println();
         
         
